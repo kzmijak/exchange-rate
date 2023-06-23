@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { Container, Stack, Typography } from "@mui/joy";
+import {
+  TransactionForm,
+  TransactionFormContent,
+} from "./modules/TransactionForm";
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [transactions, setTransactions] = useState<TransactionFormContent[]>(
+    []
+  );
+
+  const insertTransaction = (transaction: TransactionFormContent) => {
+    setTransactions((currTransactions) => [...currTransactions, transaction]);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Container component="body">
+      <Stack component="main" spacing={4}>
+        <Stack
+          component="nav"
+          justifyContent="space-between"
+          direction="row"
+          alignItems="baseline"
+          spacing={2}
+        >
+          <Typography level="h1">List of expenses</Typography>
+          <Typography level="h6">1EUR = 4,384 PLN</Typography>
+        </Stack>
+
+        <Stack component="section" direction="row">
+          <TransactionForm onSubmit={insertTransaction} />
+        </Stack>
+
+        {transactions.map((transaction) => (
+          <Typography key={transaction.title}>
+            {transaction.title} {transaction.amount}
+          </Typography>
+        ))}
+      </Stack>
+    </Container>
+  );
 }
 
-export default App
+export default App;

@@ -5,5 +5,8 @@ export const schema = yup.object({
     .string()
     .required("Title is required")
     .min(5, "Title should have at least 5 characters."),
-  amount: yup.number().required("Amount is required"),
+  amount: yup
+    .number()
+    .typeError("Amount must be a number")
+    .required("Amount is required"),
 });

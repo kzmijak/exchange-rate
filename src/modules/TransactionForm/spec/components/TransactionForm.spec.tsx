@@ -11,8 +11,7 @@ const OK_AMOUNT = 500;
 
 describe("TransactionForm", () => {
   const titleInputDOM = () => screen.getByRole("textbox", { name: /Title/ });
-  const amountInputDOM = () =>
-    screen.getByRole("spinbutton", { name: /Amount/ });
+  const amountInputDOM = () => screen.getByRole("textbox", { name: /Amount/ });
   const submitButtonDOM = () => screen.getByRole("button", { name: /Add/ });
   const submitHandler = vi.fn();
 

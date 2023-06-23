@@ -48,14 +48,15 @@ exports[`TransactionForm > should match snapshot 1`] = `
           class="MuiBox-root css-1rr4qq7"
         >
           <div
-            class="MuiInput-root MuiInput-fullWidth MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd MuiInput-formControl css-gsnhoa-JoyInput-root"
+            class="MuiInput-root MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd MuiInput-formControl css-1vip6bn-JoyInput-root"
+            inputmode="numeric"
           >
             <input
               class="MuiInput-input css-1moyr10-JoyInput-input"
               id=":r1:"
               name="amount"
-              placeholder="ex. 25,99"
-              type="number"
+              placeholder="ex. 25.99"
+              type="text"
               value="0"
             />
             <div

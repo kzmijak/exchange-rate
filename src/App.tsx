@@ -16,8 +16,8 @@ function App() {
   };
 
   return (
-    <Container component="body">
-      <Stack component="main" spacing={4}>
+    <Container component="main">
+      <Stack spacing={4}>
         <Stack
           component="nav"
           justifyContent="space-between"

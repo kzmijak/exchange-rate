@@ -7,13 +7,13 @@ import { Button, Stack } from "@mui/joy";
 import { TitleControl } from "./controls/TitleControl";
 import { AmountControl } from "./controls/AmountControl";
 
-type TransactionFormProps = {
+export type TransactionFormProps = {
   defaultValues?: Partial<TransactionFormContent>;
   onSubmit: (formContent: TransactionFormContent) => void;
 };
 
 export const TransactionForm: FC<TransactionFormProps> = ({
-  defaultValues,
+  defaultValues = { amount: 0, title: "" },
   onSubmit,
 }) => {
   const { control, handleSubmit } = useForm<TransactionFormContent>({

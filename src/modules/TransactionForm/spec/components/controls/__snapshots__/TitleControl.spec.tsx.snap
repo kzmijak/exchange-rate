@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TitleControl > should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiFormControl-vertical MuiFormControl-sizeMd MuiStack-root css-9cy8of-JoyFormControl-root-JoyStack-root"
+  >
+    <label
+      class="MuiFormLabel-root css-1ftzm8l-JoyFormLabel-root"
+      for=":r0:"
+      id=":r0:-label"
+    >
+      Title of transaction
+    </label>
+    <div
+      class="MuiBox-root css-1rr4qq7"
+    >
+      <div
+        class="MuiInput-root MuiInput-fullWidth MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd MuiInput-formControl css-gsnhoa-JoyInput-root"
+      >
+        <input
+          class="MuiInput-input css-1gw9vc6-JoyInput-input"
+          id=":r0:"
+          name="title"
+          placeholder="ex. Busk ticket"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TableFooter > should match snapshot 1`] = `
+<div>
+  <tfoot>
+    <tr>
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+      >
+        Sum: 
+        122.55
+         PLN ( 
+        27.97
+         EUR )
+      </h6>
+    </tr>
+  </tfoot>
+</div>
+`;

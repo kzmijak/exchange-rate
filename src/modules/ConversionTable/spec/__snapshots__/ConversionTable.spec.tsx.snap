@@ -1,0 +1,177 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ConversionTable > should match snapshot 1`] = `
+<div>
+  <table
+    aria-label="albums table"
+    class="MuiTable-root MuiTable-stickyHeader MuiTable-hoverRow MuiTable-borderAxisNone MuiTable-variantPlain MuiTable-colorNeutral MuiTable-sizeMd css-1gt0rm0-JoyTable-root"
+  >
+    <thead>
+      <tr>
+        <th
+          class="MuiBox-root css-34k09d"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          >
+            Title
+          </p>
+        </th>
+        <th
+          class="MuiBox-root css-yikrym"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          >
+            Amount (PLN)
+          </p>
+        </th>
+        <th
+          class="MuiBox-root css-yikrym"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          >
+            Amount (EUR)
+          </p>
+        </th>
+        <th
+          class="MuiBox-root css-bosr71"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          >
+            Options
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        style="cursor: pointer;"
+      >
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          >
+            NaN
+          </p>
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <button
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            type="button"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr
+        style="cursor: pointer;"
+      >
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          >
+            NaN
+          </p>
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <button
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            type="button"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr
+        style="cursor: pointer;"
+      >
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          />
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
+          >
+            NaN
+          </p>
+        </td>
+        <td
+          class="MuiBox-root css-0"
+        >
+          <button
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            type="button"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+        >
+          Sum: 
+          NaN
+           PLN ( 
+          NaN
+           EUR )
+        </h6>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;

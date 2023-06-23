@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TitleCell > should match snapshot 1`] = `
+<div>
+  <td
+    class="MuiBox-root css-0"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+    >
+      New book about Rust
+    </p>
+  </td>
+</div>
+`;

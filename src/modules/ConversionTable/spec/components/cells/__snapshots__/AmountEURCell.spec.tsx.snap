@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AmountEURCell > should match snapshot 1`] = `
+<div>
+  <td
+    class="MuiBox-root css-0"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+    >
+      22.82
+    </p>
+  </td>
+</div>
+`;

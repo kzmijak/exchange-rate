@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TableHeader > should match snapshot 1`] = `
+<div>
+  <thead>
+    <tr>
+      <th
+        class="MuiBox-root css-34k09d"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Title
+        </p>
+      </th>
+      <th
+        class="MuiBox-root css-yikrym"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Amount (PLN)
+        </p>
+      </th>
+      <th
+        class="MuiBox-root css-yikrym"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Amount (EUR)
+        </p>
+      </th>
+      <th
+        class="MuiBox-root css-bosr71"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Options
+        </p>
+      </th>
+    </tr>
+  </thead>
+</div>
+`;

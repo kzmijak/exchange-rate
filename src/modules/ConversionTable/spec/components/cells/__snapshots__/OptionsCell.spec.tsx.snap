@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TitleCell > should match snapshot 1`] = `
+<div>
+  <td
+    class="MuiBox-root css-0"
+  >
+    <button
+      class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+      type="button"
+    >
+      Delete
+    </button>
+  </td>
+</div>
+`;

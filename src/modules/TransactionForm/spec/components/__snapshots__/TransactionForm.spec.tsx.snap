@@ -54,7 +54,6 @@ exports[`TransactionForm > should match snapshot 1`] = `
             <input
               class="MuiInput-input css-1moyr10-JoyInput-input"
               id=":r1:"
-              name="amount"
               placeholder="ex. 25.99"
               type="text"
               value="0"

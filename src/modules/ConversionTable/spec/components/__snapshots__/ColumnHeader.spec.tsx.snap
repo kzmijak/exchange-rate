@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ColumnHeader > should match snapshot 1`] = `
+<div>
+  <th
+    class="MuiBox-root css-34k09d"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+    >
+      Title
+    </p>
+  </th>
+</div>
+`;

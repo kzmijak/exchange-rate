@@ -28,7 +28,7 @@ exports[`TransactionForm > should match snapshot 1`] = `
               class="MuiInput-input css-1gw9vc6-JoyInput-input"
               id=":r0:"
               name="title"
-              placeholder="ex. Busk ticket"
+              placeholder="ex. Bus ticket"
               value=""
             />
           </div>

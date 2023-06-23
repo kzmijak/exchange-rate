@@ -1,15 +1,18 @@
-import { Container, Stack, Typography } from "@mui/joy";
+import { Button, Container, Stack, Typography } from "@mui/joy";
 import {
   TransactionForm,
   TransactionFormContent,
 } from "./modules/TransactionForm";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { ConversionTable } from "modules/ConversionTable";
 import { TransactionModel } from "models/TransactionModel";
 import { nanoid } from "nanoid";
-import { EUR_TO_PLN } from "utils/convertCurrency";
+import { observer } from "mobx-react-lite";
+import { ConversionRate } from "modules/CurrencyConversions";
 
-function App() {
+type AppProps = { conversionRate: ConversionRate };
+
+export const App: FC<AppProps> = observer(({ conversionRate }) => {
   const [transactions, setTransactions] = useState<TransactionModel[]>([]);
 
   const insertTransaction = (transaction: TransactionFormContent) => {
@@ -18,6 +21,10 @@ function App() {
       ...currTransactions,
       newTransaction,
     ]);
+  };
+
+  const increaseConversionRate = () => {
+    conversionRate.changeRate(conversionRate.eurToPln + 1);
   };
 
   return (
@@ -34,7 +41,10 @@ function App() {
           spacing={2}
         >
           <Typography level="h1">List of expenses</Typography>
-          <Typography level="h6">1EUR = {EUR_TO_PLN} PLN</Typography>
+          <Typography level="h6">
+            1EUR = {conversionRate.eurToPln} PLN
+          </Typography>
+          <Button onClick={increaseConversionRate}>DO STUPID</Button>
         </Stack>
 
         <Stack component="section" direction="row">
@@ -45,6 +55,4 @@ function App() {
       </Stack>
     </Container>
   );
-}
-
-export default App;
+});

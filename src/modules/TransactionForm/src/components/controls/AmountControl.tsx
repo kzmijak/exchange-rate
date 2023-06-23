@@ -18,7 +18,8 @@ export const AmountControl: FC<AmountControlProps> = ({ control }) => {
   return (
     <Label label="Amount (in PLN)">
       <NumericFormat
-        {...field}
+        onChange={field.onChange}
+        value={field.value}
         decimalScale={2}
         customInput={Input}
         placeholder="ex. 25.99"

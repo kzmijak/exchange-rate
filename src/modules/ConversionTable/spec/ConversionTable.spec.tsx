@@ -6,7 +6,12 @@ import { TransactionModel } from "models/Transaction/src/TransactionModel";
 const transactions = [{}, {}, {}] as TransactionModel[];
 
 describe("ConversionTable", () => {
-  const Component = () => <ConversionTable transactions={transactions} />;
+  const Component = () => (
+    <ConversionTable
+      transactions={transactions}
+      onTransactionDelete={() => null}
+    />
+  );
 
   it("should match snapshot", () => {
     expect(render(<Component />).container).toMatchSnapshot();

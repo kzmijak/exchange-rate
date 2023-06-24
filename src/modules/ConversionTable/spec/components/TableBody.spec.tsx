@@ -1,12 +1,11 @@
 import { describe, it, expect } from "vitest";
 import { TableBody } from "../../src/components/TableBody";
-import { rows } from "../__fixtures__/rows";
-import { render } from "@testing-library/react";
+import { renderWithApi } from "../__fixtures__/renderWithApi";
 
 describe("TableBody", () => {
-  const Component = () => <TableBody rows={rows} />;
+  const Component = () => <TableBody />;
 
   it("should match snapshot", () => {
-    expect(render(<Component />).container).toMatchSnapshot();
+    expect(renderWithApi(<Component />).container).toMatchSnapshot();
   });
 });

@@ -1,17 +1,17 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { TableFooter } from "../../src/components/TableFooter";
-import { rows } from "../__fixtures__/rows";
+import { renderWithApi } from "../__fixtures__/renderWithApi";
 
 describe("TableFooter", () => {
-  const Component = () => <TableFooter rows={rows} />;
+  const Component = () => <TableFooter />;
 
   it("should match snapshot", () => {
-    expect(render(<Component />).container).toMatchSnapshot();
+    expect(renderWithApi(<Component />).container).toMatchSnapshot();
   });
 
   it("should properly calculate sums", () => {
-    render(<Component />);
+    renderWithApi(<Component />);
 
     expect(screen.getByText(/Sum:\s*122.55\s*PLN\s*\(\s*27.97\s*EUR\s*\)/)); // Sum: 122.55 PLN (27.97 EUR)
   });

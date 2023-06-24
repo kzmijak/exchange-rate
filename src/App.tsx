@@ -35,7 +35,10 @@ export const App: FC = observer(() => {
           <TransactionForm onSubmit={transactionsStore.insert} />
         </Stack>
 
-        <ConversionTable transactions={transactionsStore.transactions} />
+        <ConversionTable
+          transactions={transactionsStore.transactions}
+          onTransactionDelete={transactionsStore.deleteById}
+        />
       </Stack>
     </Container>
   );

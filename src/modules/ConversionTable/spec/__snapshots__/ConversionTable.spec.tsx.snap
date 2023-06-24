@@ -3,7 +3,7 @@
 exports[`ConversionTable > should match snapshot 1`] = `
 <div>
   <table
-    aria-label="albums table"
+    aria-label="conversion table"
     class="MuiTable-root MuiTable-stickyHeader MuiTable-hoverRow MuiTable-borderAxisNone MuiTable-variantPlain MuiTable-colorNeutral MuiTable-sizeMd css-1gt0rm0-JoyTable-root"
   >
     <thead>

@@ -13,12 +13,19 @@ export class TransactionsStore {
       status: observable,
       insert: action.bound,
       fetchHistory: action,
+      deleteById: action.bound,
     });
   }
 
   insert(transaction: Omit<TransactionModel, "id">) {
     const newTransaction = { ...transaction, id: nanoid() };
     this.transactions = [...this.transactions, newTransaction];
+  }
+
+  deleteById(id: TransactionModel["id"]) {
+    this.transactions = this.transactions.filter(
+      (transaction) => transaction.id !== id
+    );
   }
 
   async fetchHistory() {

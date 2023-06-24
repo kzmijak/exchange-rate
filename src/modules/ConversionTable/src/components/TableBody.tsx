@@ -1,12 +1,9 @@
 import { FC } from "react";
-import { ConversionTableRow } from "../models/ConversionTableRow";
 import { AmountEURCell, AmountPLNCell, OptionsCell, TitleCell } from "./cells";
+import { useConversionTableApi } from "../contexts/ConversionTableApiContext";
 
-export type TableBodyProps = {
-  rows: ConversionTableRow[];
-};
-
-export const TableBody: FC<TableBodyProps> = ({ rows }) => {
+export const TableBody: FC = () => {
+  const { rows } = useConversionTableApi();
   return (
     <tbody>
       {rows.map((row) => (

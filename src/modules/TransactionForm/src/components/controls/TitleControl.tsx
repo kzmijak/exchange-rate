@@ -16,7 +16,7 @@ export const TitleControl: FC<TitleControlProps> = ({ control }) => {
 
   return (
     <Label label="Title of transaction">
-      <Input {...field} fullWidth placeholder="ex. Bus ticket" />
+      <Input autoFocus {...field} fullWidth placeholder="ex. Bus ticket" />
       {fieldState.error && (
         <FormHelperText color="danger.500">
           {fieldState.error.message}

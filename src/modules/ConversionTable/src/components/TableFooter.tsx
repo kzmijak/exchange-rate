@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Typography } from "@mui/joy";
 import { useConversionTableApi } from "../contexts/ConversionTableApiContext";
-import { useCurrencyConverter } from "hooks/useCurrencyConverter";
+import { useCurrencyConverter } from "modules/CurrencyConversion";
 
 export const TableFooter: FC = () => {
   const { rows } = useConversionTableApi();

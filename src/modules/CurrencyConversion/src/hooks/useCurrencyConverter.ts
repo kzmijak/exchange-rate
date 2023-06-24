@@ -1,5 +1,6 @@
 import { useRootStore } from "modules/RootStore";
-import { convertEurToPln, convertPlnToEur } from "utils/convertCurrency";
+import { convertEurToPln } from "../utils/convertEurToPln";
+import { convertPlnToEur } from "../utils/convertPlnToEur";
 
 export const useCurrencyConverter = () => {
   const {

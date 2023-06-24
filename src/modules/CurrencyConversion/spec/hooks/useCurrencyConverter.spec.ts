@@ -1,5 +1,5 @@
 import { renderHookWithStore } from "testUtils/renderWithStore";
-import { useCurrencyConverter } from ".";
+import { useCurrencyConverter } from "../../src/hooks/useCurrencyConverter";
 import { ConversionRateStore } from "modules/RootStore/src/stores/ConversionRateStore";
 
 describe("useCurrencyConverter", () => {

@@ -1,6 +1,6 @@
 import { action, computed, makeObservable, observable } from "mobx";
 
-export class ConversionRate {
+export class ConversionRateStore {
   eurToPln = 4.382;
 
   constructor() {
@@ -19,3 +19,5 @@ export class ConversionRate {
     return 1 / this.eurToPln;
   }
 }
+
+export const conversionRateStore = new ConversionRateStore();

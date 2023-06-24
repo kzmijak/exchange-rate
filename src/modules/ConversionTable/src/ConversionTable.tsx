@@ -2,7 +2,7 @@ import { Table } from "@mui/joy";
 import { FC } from "react";
 import { TableHeader } from "./components/TableHeader";
 import { TableBody } from "./components/TableBody";
-import { TransactionModel } from "models/TransactionModel";
+import { TransactionModel } from "models/Transaction/src/TransactionModel";
 import { arrayMapTransactionModelToConversionTableRow } from "./utils/transactionToRowMapper";
 import { TableFooter } from "./components/TableFooter";
 

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
 import { ConversionTable } from "../src/ConversionTable";
-import { TransactionModel } from "models/TransactionModel";
+import { TransactionModel } from "models/Transaction/src/TransactionModel";
 
 const transactions = [{}, {}, {}] as TransactionModel[];
 

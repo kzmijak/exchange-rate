@@ -1,4 +1,4 @@
-import { TransactionModel } from "models/TransactionModel";
+import { TransactionModel } from "models/Transaction/src/TransactionModel";
 import { ConversionTableRow } from "../models/ConversionTableRow";
 
 export const mapTransactionModelToConversionTableRow = ({

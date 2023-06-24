@@ -1,4 +1,4 @@
-import { TransactionModel } from "models/TransactionModel";
+import { TransactionModel } from "models/Transaction/src/TransactionModel";
 
 export type ConversionTableRow = {
   id: TransactionModel["id"];

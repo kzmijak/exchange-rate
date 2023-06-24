@@ -1,30 +1,14 @@
 import { Button, Container, Stack, Typography } from "@mui/joy";
-import {
-  TransactionForm,
-  TransactionFormContent,
-} from "./modules/TransactionForm";
-import { FC, useState } from "react";
+import { TransactionForm } from "./modules/TransactionForm";
+import { FC } from "react";
 import { ConversionTable } from "modules/ConversionTable";
-import { TransactionModel } from "models/TransactionModel";
-import { nanoid } from "nanoid";
 import { observer } from "mobx-react-lite";
-import { ConversionRate } from "modules/CurrencyConversions";
+import { useRootStore } from "modules/RootStore";
 
-type AppProps = { conversionRate: ConversionRate };
-
-export const App: FC<AppProps> = observer(({ conversionRate }) => {
-  const [transactions, setTransactions] = useState<TransactionModel[]>([]);
-
-  const insertTransaction = (transaction: TransactionFormContent) => {
-    const newTransaction = { ...transaction, id: nanoid() };
-    setTransactions((currTransactions) => [
-      ...currTransactions,
-      newTransaction,
-    ]);
-  };
-
+export const App: FC = observer(() => {
+  const { transactionsStore, conversionRateStore } = useRootStore();
   const increaseConversionRate = () => {
-    conversionRate.changeRate(conversionRate.eurToPln + 1);
+    conversionRateStore.changeRate(conversionRateStore.eurToPln + 1);
   };
 
   return (
@@ -42,16 +26,16 @@ export const App: FC<AppProps> = observer(({ conversionRate }) => {
         >
           <Typography level="h1">List of expenses</Typography>
           <Typography level="h6">
-            1EUR = {conversionRate.eurToPln} PLN
+            1EUR = {conversionRateStore.eurToPln} PLN
           </Typography>
           <Button onClick={increaseConversionRate}>DO STUPID</Button>
         </Stack>
 
         <Stack component="section" direction="row">
-          <TransactionForm onSubmit={insertTransaction} />
+          <TransactionForm onSubmit={transactionsStore.insert} />
         </Stack>
 
-        <ConversionTable transactions={transactions} />
+        <ConversionTable transactions={transactionsStore.transactions} />
       </Stack>
     </Container>
   );

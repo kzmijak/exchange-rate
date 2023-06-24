@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { App } from "./App.tsx";
-import { ConversionRate } from "modules/CurrencyConversions/index.ts";
-
-const store = new ConversionRate();
+import { RootStoreProvider } from "modules/RootStore";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <App conversionRate={store} />
+  <RootStoreProvider>
+    <App />
+  </RootStoreProvider>
 );

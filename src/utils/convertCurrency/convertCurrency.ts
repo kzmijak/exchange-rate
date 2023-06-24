@@ -1,8 +1,6 @@
-export const EUR_TO_PLN = 4.382;
-
-export const convertEurToPln = (amountEur: number) =>
-  cutDecimals(amountEur * EUR_TO_PLN);
-export const convertPlnToEur = (amountPLN: number) =>
-  cutDecimals(amountPLN / EUR_TO_PLN);
+export const convertEurToPln = (amountEur: number, eurToPlnRate: number) =>
+  cutDecimals(amountEur * eurToPlnRate);
+export const convertPlnToEur = (amountPLN: number, eurToPlnRate: number) =>
+  cutDecimals(amountPLN / eurToPlnRate);
 
 const cutDecimals = (overflowing: number) => parseFloat(overflowing.toFixed(2));

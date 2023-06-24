@@ -1,14 +1,17 @@
 import { action, computed, makeObservable, observable } from "mobx";
 
-export class ConversionRateStore {
-  eurToPln = 4.382;
+const DEFAULT_CONVERSION_RATE = 4.382;
 
-  constructor() {
+export class ConversionRateStore {
+  eurToPln: number;
+
+  constructor(eurToPln = DEFAULT_CONVERSION_RATE) {
     makeObservable(this, {
       eurToPln: observable,
       changeRate: action,
       plnToEur: computed,
     });
+    this.eurToPln = eurToPln;
   }
 
   changeRate(newRate: number) {

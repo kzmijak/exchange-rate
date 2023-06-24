@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { render } from "@testing-library/react";
 import { ConversionTable } from "../src/ConversionTable";
 import { TransactionModel } from "models/Transaction/src/TransactionModel";
+import { renderWithStore } from "testUtils/renderWithStore";
 
 const transactions = [{}, {}, {}] as TransactionModel[];
 
@@ -14,6 +14,6 @@ describe("ConversionTable", () => {
   );
 
   it("should match snapshot", () => {
-    expect(render(<Component />).container).toMatchSnapshot();
+    expect(renderWithStore(<Component />).container).toMatchSnapshot();
   });
 });

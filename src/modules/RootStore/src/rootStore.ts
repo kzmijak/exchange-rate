@@ -1,10 +1,21 @@
-import { conversionRateStore } from "./stores/ConversionRateStore";
+import {
+  conversionRateStore,
+  ConversionRateStore,
+} from "./stores/ConversionRateStore";
+import {
+  transactionsStore,
+  TransactionsStore,
+} from "./stores/TransactionsStore";
 
-import { transactionsStore } from "./stores/TransactionsStore";
+export type RootStore = {
+  conversionRateStore: ConversionRateStore;
+  transactionsStore: TransactionsStore;
+};
 
-export const createRootStore = () => ({
+export const createRootStore = (
+  preloadedStore: Partial<RootStore> = {}
+): RootStore => ({
   conversionRateStore,
   transactionsStore,
+  ...preloadedStore,
 });
-
-export type RootStore = ReturnType<typeof createRootStore>;

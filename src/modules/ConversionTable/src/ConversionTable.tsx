@@ -25,7 +25,7 @@ export const ConversionTable: FC<ConversionTableProps> = ({
       deleteRow: onTransactionDelete,
       rows,
     }),
-    [transactions]
+    [onTransactionDelete, rows]
   );
 
   return (

@@ -1,11 +1,14 @@
 import { FC } from "react";
 import { ConversionTableRow } from "../../models/ConversionTableRow";
 import { Box, Typography } from "@mui/joy";
-import { convertPlnToEur } from "utils/convertCurrency";
+import { observer } from "mobx-react-lite";
+import { useCurrencyConverter } from "hooks/useCurrencyConverter";
 
 type AmountEURCellProps = { row: ConversionTableRow };
 
-export const AmountEURCell: FC<AmountEURCellProps> = ({ row }) => {
+export const AmountEURCell: FC<AmountEURCellProps> = observer(({ row }) => {
+  const { convertPlnToEur } = useCurrencyConverter();
+
   return (
     <Box component="td">
       <Typography textAlign="right">
@@ -13,4 +16,4 @@ export const AmountEURCell: FC<AmountEURCellProps> = ({ row }) => {
       </Typography>
     </Box>
   );
-};
+});

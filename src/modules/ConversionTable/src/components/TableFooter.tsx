@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { Typography } from "@mui/joy";
-import { convertPlnToEur } from "utils/convertCurrency";
 import { useConversionTableApi } from "../contexts/ConversionTableApiContext";
+import { useCurrencyConverter } from "hooks/useCurrencyConverter";
 
 export const TableFooter: FC = () => {
   const { rows } = useConversionTableApi();
+  const { convertPlnToEur } = useCurrencyConverter();
 
   const sumPLN = rows.reduce((acc, curr) => acc + curr.amountPLN, 0);
   const sumEUR = convertPlnToEur(sumPLN);

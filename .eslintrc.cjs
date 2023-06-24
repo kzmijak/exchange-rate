@@ -11,10 +11,6 @@ module.exports = {
   plugins: ["react-refresh", "mobx"],
   rules: {
     "react-refresh/only-export-components": "warn",
-    enforceActions: "error",
-    computedRequiresReaction: true,
-    reactionRequiresObservable: true,
-    observableRequiresReaction: true,
-    disableErrorBoundaries: true,
+    "mobx/missing-observer": "off",
   },
 };

@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TableBody > should match snapshot 1`] = `
+<div>
+  <tbody>
+    <tr>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          New book about Rust
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          100
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          22.82
+        </p>
+      </td>
+      <td>
+        <button
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Snacks for a football match
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          20
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          4.56
+        </p>
+      </td>
+      <td>
+        <button
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+        >
+          Bus ticket
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          2.55
+        </p>
+      </td>
+      <td>
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+        >
+          0.58
+        </p>
+      </td>
+      <td>
+        <button
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          type="button"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</div>
+`;

@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AmountControl > should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiFormControl-vertical MuiFormControl-sizeMd MuiStack-root css-9cy8of-JoyFormControl-root-JoyStack-root"
+  >
+    <label
+      class="MuiFormLabel-root css-1ftzm8l-JoyFormLabel-root"
+      for=":r0:"
+      id=":r0:-label"
+    >
+      Amount (in PLN)
+    </label>
+    <div
+      class="MuiBox-root css-1rr4qq7"
+    >
+      <div
+        class="MuiInput-root MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd MuiInput-formControl css-1vip6bn-JoyInput-root"
+        inputmode="numeric"
+      >
+        <input
+          class="MuiInput-input css-1moyr10-JoyInput-input"
+          id=":r0:"
+          placeholder="ex. 25.99"
+          type="text"
+          value=""
+        />
+        <div
+          class="MuiInput-endDecorator css-x3cgwv-JoyInput-endDecorator"
+        >
+          zł
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

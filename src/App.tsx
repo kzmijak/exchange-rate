@@ -1,35 +1,77 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  Button,
+  Container,
+  Modal,
+  ModalDialog,
+  Stack,
+  Typography,
+} from "@mui/joy";
+import { TransactionForm } from "./modules/TransactionForm";
+import { FC, useState } from "react";
+import { ConversionTable } from "modules/ConversionTable";
+import { observer } from "mobx-react-lite";
+import { useRootStore } from "modules/RootStore";
+import { ConversionRateForm } from "components/ConversionRateForm";
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App: FC = observer(() => {
+  const { transactionsStore, conversionRateStore } = useRootStore();
+
+  const [conversionFormOpen, setConversionFormOpen] = useState(false);
+  const openConversionRateForm = () => setConversionFormOpen(true);
+  const closeConversionRateForm = () => setConversionFormOpen(false);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Container
+        component="main"
+        sx={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+      >
+        <Stack spacing={4}>
+          <Stack
+            component="nav"
+            justifyContent="space-between"
+            direction="row"
+            alignItems="baseline"
+            spacing={2}
+          >
+            <Typography level="h1">List of expenses</Typography>
+            <Stack direction="row" spacing={2}>
+              <Typography level="h6">
+                1EUR = {conversionRateStore.eurToPln} PLN
+              </Typography>
+              <Button size="sm" onClick={openConversionRateForm}>
+                Change
+              </Button>
+            </Stack>
+          </Stack>
 
-export default App
+          <Stack
+            component="section"
+            direction="row"
+            justifyContent="space-between"
+            alignItems="end"
+          >
+            <TransactionForm onSubmit={transactionsStore.insert} />
+            <Button
+              size="sm"
+              disabled={transactionsStore.status !== "idle"}
+              onClick={transactionsStore.fetchHistory}
+            >
+              Fetch sample
+            </Button>
+          </Stack>
+
+          <ConversionTable
+            transactions={transactionsStore.transactions}
+            onTransactionDelete={transactionsStore.deleteById}
+          />
+        </Stack>
+      </Container>
+      <Modal open={conversionFormOpen} onClose={closeConversionRateForm}>
+        <ModalDialog>
+          <ConversionRateForm onSubmitSuccess={closeConversionRateForm} />
+        </ModalDialog>
+      </Modal>
+    </>
+  );
+});

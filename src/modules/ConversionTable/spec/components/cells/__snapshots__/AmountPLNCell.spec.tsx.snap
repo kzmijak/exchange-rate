@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AmountPLNCell > should match snapshot 1`] = `
+<div>
+  <td>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
+    >
+      100
+    </p>
+  </td>
+</div>
+`;

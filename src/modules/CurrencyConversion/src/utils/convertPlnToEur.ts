@@ -1,4 +1,4 @@
-import { cutDecimals } from "./utils/cutDecimals";
+import { preventDecimalOverflow } from "utils/preventDecimalOverflow";
 
 export const convertPlnToEur = (amountPLN: number, eurToPlnRate: number) =>
-  cutDecimals(amountPLN / eurToPlnRate);
+  preventDecimalOverflow(amountPLN / eurToPlnRate);

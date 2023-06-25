@@ -16,15 +16,22 @@ export const TransactionForm: FC<TransactionFormProps> = ({
   defaultValues = { amount: 0, title: "" },
   onSubmit,
 }) => {
-  const { control, handleSubmit } = useForm<TransactionFormContent>({
-    defaultValues,
-    resolver: yupResolver(schema),
-  });
+  const { control, handleSubmit, reset, setFocus } =
+    useForm<TransactionFormContent>({
+      defaultValues,
+      resolver: yupResolver(schema),
+    });
+
+  const submitForm = (formContent: TransactionFormContent) => {
+    setFocus("title");
+    reset();
+    onSubmit(formContent);
+  };
 
   return (
     <Stack
       component="form"
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(submitForm)}
       direction="row"
       spacing={2}
     >

@@ -9,14 +9,27 @@ type TitleControlProps = {
 };
 
 export const TitleControl: FC<TitleControlProps> = ({ control }) => {
-  const { field, fieldState } = useController({
+  const {
+    field: { ref, ...field },
+    fieldState,
+  } = useController({
     control,
     name: "title",
   });
 
   return (
     <Label label="Title of transaction">
-      <Input autoFocus {...field} fullWidth placeholder="ex. Bus ticket" />
+      <Input
+        autoFocus
+        {...field}
+        fullWidth
+        placeholder="ex. Bus ticket"
+        slotProps={{
+          input: {
+            ref,
+          },
+        }}
+      />
       {fieldState.error && (
         <FormHelperText color="danger.500">
           {fieldState.error.message}

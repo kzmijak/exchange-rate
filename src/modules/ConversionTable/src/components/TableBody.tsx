@@ -7,7 +7,7 @@ export const TableBody: FC = () => {
   return (
     <tbody>
       {rows.map((row) => (
-        <tr key={row.id} style={{ cursor: "pointer" }}>
+        <tr key={row.id}>
           <TitleCell row={row} />
           <AmountPLNCell row={row} />
           <AmountEURCell row={row} />

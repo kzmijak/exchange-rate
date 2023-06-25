@@ -12,7 +12,7 @@ export class TransactionsStore {
       transactions: observable,
       status: observable,
       insert: action.bound,
-      fetchHistory: action,
+      fetchHistory: action.bound,
       deleteById: action.bound,
     });
   }

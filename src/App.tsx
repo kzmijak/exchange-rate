@@ -45,8 +45,20 @@ export const App: FC = observer(() => {
             </Stack>
           </Stack>
 
-          <Stack component="section" direction="row">
+          <Stack
+            component="section"
+            direction="row"
+            justifyContent="space-between"
+            alignItems="end"
+          >
             <TransactionForm onSubmit={transactionsStore.insert} />
+            <Button
+              size="sm"
+              disabled={transactionsStore.status !== "idle"}
+              onClick={transactionsStore.fetchHistory}
+            >
+              Fetch sample
+            </Button>
           </Stack>
 
           <ConversionTable

@@ -38,6 +38,7 @@ export const ConversionTable: FC<ConversionTableProps> = ({
         stickyHeader
         stripe="odd"
         variant="plain"
+        stickyFooter
         hoverRow
       >
         <TableHeader />

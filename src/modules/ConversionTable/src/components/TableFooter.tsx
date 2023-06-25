@@ -13,9 +13,11 @@ export const TableFooter: FC = () => {
   return (
     <tfoot>
       <tr>
-        <Typography level="h6" textAlign="left">
-          Sum: {sumPLN} PLN ( {sumEUR} EUR )
-        </Typography>
+        <td>
+          <Typography level="h6" textAlign="left">
+            Sum: {sumPLN} PLN ( {sumEUR} EUR )
+          </Typography>
+        </td>
       </tr>
     </tfoot>
   );

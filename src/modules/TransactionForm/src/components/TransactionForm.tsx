@@ -10,11 +10,13 @@ import { AmountControl } from "./controls/AmountControl";
 export type TransactionFormProps = {
   defaultValues?: Partial<TransactionFormContent>;
   onSubmit: (formContent: TransactionFormContent) => void;
+  direction?: "row" | "column";
 };
 
 export const TransactionForm: FC<TransactionFormProps> = ({
   defaultValues = { amount: 0, title: "" },
   onSubmit,
+  direction = "row",
 }) => {
   const { control, handleSubmit, reset, setFocus } =
     useForm<TransactionFormContent>({
@@ -32,7 +34,7 @@ export const TransactionForm: FC<TransactionFormProps> = ({
     <Stack
       component="form"
       onSubmit={handleSubmit(submitForm)}
-      direction="row"
+      direction={direction}
       spacing={2}
     >
       <Stack flex={1} spacing={3}>

@@ -15,7 +15,9 @@ export const OptionsCell: FC<OptionsCellProps> = ({ row }) => {
 
   return (
     <td>
-      <Button onClick={handleDeleteClick}>Delete</Button>
+      <Button onClick={handleDeleteClick} size="sm">
+        Delete
+      </Button>
     </td>
   );
 };

@@ -6,7 +6,7 @@ exports[`TitleControl > should match snapshot 1`] = `
     class="MuiFormControl-root MuiFormControl-vertical MuiFormControl-sizeMd MuiStack-root css-9cy8of-JoyFormControl-root-JoyStack-root"
   >
     <label
-      class="MuiFormLabel-root css-1ftzm8l-JoyFormLabel-root"
+      class="MuiFormLabel-root css-im8zro-JoyFormLabel-root"
       for=":r0:"
       id=":r0:-label"
     >

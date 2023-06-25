@@ -1,4 +1,4 @@
-import { action, makeObservable, observable, runInAction } from "mobx";
+import { action, flow, makeObservable, observable } from "mobx";
 import { TransactionModel } from "models/Transaction/src/TransactionModel";
 import { nanoid } from "nanoid";
 import { fetchTransactions } from "../../../../api/fetchTransactions";
@@ -12,7 +12,7 @@ export class TransactionsStore {
       transactions: observable,
       status: observable,
       insert: action.bound,
-      fetchHistory: action.bound,
+      fetchHistory: flow.bound,
       deleteById: action.bound,
     });
   }
@@ -28,18 +28,14 @@ export class TransactionsStore {
     );
   }
 
-  async fetchHistory() {
+  *fetchHistory() {
     this.status = "pending";
     try {
-      const transactions = await fetchTransactions();
-      runInAction(() => {
-        this.transactions = transactions;
-        this.status = "fulfilled";
-      });
+      const transactions: TransactionModel[] = yield fetchTransactions();
+      this.transactions = transactions;
+      this.status = "fulfilled";
     } catch {
-      runInAction(() => {
-        this.status = "rejected";
-      });
+      this.status = "rejected";
     }
   }
 }

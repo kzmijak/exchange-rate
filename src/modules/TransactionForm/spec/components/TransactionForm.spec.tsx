@@ -68,12 +68,12 @@ describe("TransactionForm", () => {
       );
       await userEvent.click(submitButtonDOM());
       expect(
-        screen.getByText("Title should have at least 5 characters.")
+        screen.getByText("Title must have at least 5 characters.")
       ).toBeVisible();
       expect(submitHandler).not.toHaveBeenCalled();
       await userEvent.type(titleInputDOM(), "5");
       expect(
-        screen.queryByText("Title should have at least 5 characters.")
+        screen.queryByText("Title must have at least 5 characters.")
       ).not.toBeInTheDocument();
       await userEvent.click(submitButtonDOM());
       expect(submitHandler).toHaveBeenCalledOnce();

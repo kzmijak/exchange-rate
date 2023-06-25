@@ -4,15 +4,17 @@ exports[`TableFooter > should match snapshot 1`] = `
 <div>
   <tfoot>
     <tr>
-      <h6
-        class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
-      >
-        Sum: 
-        122.55
-         PLN ( 
-        27.97
-         EUR )
-      </h6>
+      <td>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+        >
+          Sum: 
+          122.55
+           PLN ( 
+          27.97
+           EUR )
+        </h6>
+      </td>
     </tr>
   </tfoot>
 </div>

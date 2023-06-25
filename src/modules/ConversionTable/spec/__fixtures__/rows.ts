@@ -4,12 +4,12 @@ export const row1 = {
   amountPLN: 100,
 } as const;
 export const row2 = {
-  id: "1",
+  id: "2",
   title: "Snacks for a football match",
   amountPLN: 20,
 } as const;
 export const row3 = {
-  id: "1",
+  id: "3",
   title: "Bus ticket",
   amountPLN: 2.55,
 } as const;

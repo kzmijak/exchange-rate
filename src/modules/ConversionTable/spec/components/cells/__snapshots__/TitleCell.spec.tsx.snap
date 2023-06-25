@@ -2,9 +2,7 @@
 
 exports[`TitleCell > should match snapshot 1`] = `
 <div>
-  <td
-    class="MuiBox-root css-0"
-  >
+  <td>
     <p
       class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
     >

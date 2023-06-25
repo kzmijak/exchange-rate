@@ -16,7 +16,7 @@ exports[`TitleControl > should match snapshot 1`] = `
       class="MuiBox-root css-1rr4qq7"
     >
       <div
-        class="MuiInput-root MuiInput-fullWidth MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd MuiInput-formControl css-gsnhoa-JoyInput-root"
+        class="MuiInput-root MuiInput-fullWidth MuiInput-variantOutlined MuiInput-colorNeutral MuiInput-sizeMd Joy-focused MuiInput-formControl css-gsnhoa-JoyInput-root"
       >
         <input
           class="MuiInput-input css-1gw9vc6-JoyInput-input"

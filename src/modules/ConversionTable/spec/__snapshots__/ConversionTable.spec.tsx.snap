@@ -4,7 +4,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
 <div>
   <table
     aria-label="conversion table"
-    class="MuiTable-root MuiTable-stickyHeader MuiTable-hoverRow MuiTable-borderAxisNone MuiTable-variantPlain MuiTable-colorNeutral MuiTable-sizeMd css-1gt0rm0-JoyTable-root"
+    class="MuiTable-root MuiTable-stickyHeader MuiTable-stickyFooter MuiTable-hoverRow MuiTable-borderAxisNone MuiTable-variantPlain MuiTable-colorNeutral MuiTable-sizeMd css-1urnli7-JoyTable-root"
   >
     <thead>
       <tr>
@@ -47,35 +47,25 @@ exports[`ConversionTable > should match snapshot 1`] = `
       </tr>
     </thead>
     <tbody>
-      <tr
-        style="cursor: pointer;"
-      >
-        <td
-          class="MuiBox-root css-0"
-        >
+      <tr>
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           >
             NaN
           </p>
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <button
             class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
             type="button"
@@ -84,35 +74,25 @@ exports[`ConversionTable > should match snapshot 1`] = `
           </button>
         </td>
       </tr>
-      <tr
-        style="cursor: pointer;"
-      >
-        <td
-          class="MuiBox-root css-0"
-        >
+      <tr>
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           >
             NaN
           </p>
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <button
             class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
             type="button"
@@ -121,35 +101,25 @@ exports[`ConversionTable > should match snapshot 1`] = `
           </button>
         </td>
       </tr>
-      <tr
-        style="cursor: pointer;"
-      >
-        <td
-          class="MuiBox-root css-0"
-        >
+      <tr>
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           />
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <p
             class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           >
             NaN
           </p>
         </td>
-        <td
-          class="MuiBox-root css-0"
-        >
+        <td>
           <button
             class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
             type="button"
@@ -161,15 +131,17 @@ exports[`ConversionTable > should match snapshot 1`] = `
     </tbody>
     <tfoot>
       <tr>
-        <h6
-          class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
-        >
-          Sum: 
-          NaN
-           PLN ( 
-          NaN
-           EUR )
-        </h6>
+        <td>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+          >
+            Sum: 
+            NaN
+             PLN ( 
+            NaN
+             EUR )
+          </h6>
+        </td>
       </tr>
     </tfoot>
   </table>

@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/joy";
+import { Button } from "@mui/joy";
 import { FC } from "react";
 import { ConversionTableRow } from "../../models/ConversionTableRow";
 import { useConversionTableApi } from "../../contexts/ConversionTableApiContext";
@@ -14,8 +14,8 @@ export const OptionsCell: FC<OptionsCellProps> = ({ row }) => {
   };
 
   return (
-    <Box component="td">
+    <td>
       <Button onClick={handleDeleteClick}>Delete</Button>
-    </Box>
+    </td>
   );
 };

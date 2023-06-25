@@ -1,7 +1,7 @@
 import { Button, FormControl, FormLabel, Input, Stack } from "@mui/joy";
 import { observer } from "mobx-react-lite";
 import { useRootStore } from "modules/RootStore";
-import { ChangeEvent, FC, useState } from "react";
+import { ChangeEvent, FC, FormEvent, useState } from "react";
 import { NumericFormat } from "react-number-format";
 
 type ConversionRateFormProps = {
@@ -18,7 +18,8 @@ export const ConversionRateForm: FC<ConversionRateFormProps> = observer(
       setInputRate(event.target.value);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (event: FormEvent) => {
+      event.preventDefault();
       if (inputRate) {
         const rateNumber = Number(inputRate);
         if (!isNaN(rateNumber)) {

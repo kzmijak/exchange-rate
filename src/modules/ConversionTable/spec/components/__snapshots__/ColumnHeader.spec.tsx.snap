@@ -6,7 +6,7 @@ exports[`ColumnHeader > should match snapshot 1`] = `
     class="MuiBox-root css-34k09d"
   >
     <p
-      class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
     >
       Title
     </p>

@@ -12,7 +12,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
           class="MuiBox-root css-34k09d"
         >
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-6zqddh-JoyTypography-root"
           >
             Title
           </p>
@@ -21,7 +21,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
           class="MuiBox-root css-yikrym"
         >
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           >
             Amount (PLN)
           </p>
@@ -30,16 +30,16 @@ exports[`ConversionTable > should match snapshot 1`] = `
           class="MuiBox-root css-yikrym"
         >
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-1sod2m5-JoyTypography-root"
           >
             Amount (EUR)
           </p>
         </th>
         <th
-          class="MuiBox-root css-bosr71"
+          class="MuiBox-root css-yikrym"
         >
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-12jjlxs-JoyTypography-root"
           >
             Options
           </p>
@@ -50,7 +50,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
       <tr>
         <td>
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-6zqddh-JoyTypography-root"
           />
         </td>
         <td>
@@ -65,9 +65,11 @@ exports[`ConversionTable > should match snapshot 1`] = `
             NaN
           </p>
         </td>
-        <td>
+        <td
+          align="center"
+        >
           <button
-            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
             type="button"
           >
             Delete
@@ -77,7 +79,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
       <tr>
         <td>
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-6zqddh-JoyTypography-root"
           />
         </td>
         <td>
@@ -92,9 +94,11 @@ exports[`ConversionTable > should match snapshot 1`] = `
             NaN
           </p>
         </td>
-        <td>
+        <td
+          align="center"
+        >
           <button
-            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
             type="button"
           >
             Delete
@@ -104,7 +108,7 @@ exports[`ConversionTable > should match snapshot 1`] = `
       <tr>
         <td>
           <p
-            class="MuiTypography-root MuiTypography-inherit css-1czpeps-JoyTypography-root"
+            class="MuiTypography-root MuiTypography-inherit css-6zqddh-JoyTypography-root"
           />
         </td>
         <td>
@@ -119,9 +123,11 @@ exports[`ConversionTable > should match snapshot 1`] = `
             NaN
           </p>
         </td>
-        <td>
+        <td
+          align="center"
+        >
           <button
-            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+            class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
             type="button"
           >
             Delete
@@ -131,16 +137,18 @@ exports[`ConversionTable > should match snapshot 1`] = `
     </tbody>
     <tfoot>
       <tr>
-        <td>
-          <h6
-            class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+        <td
+          colspan="4"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-1wlnfom-JoyTypography-root"
           >
             Sum: 
             NaN
              PLN ( 
             NaN
              EUR )
-          </h6>
+          </p>
         </td>
       </tr>
     </tfoot>

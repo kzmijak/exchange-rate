@@ -6,7 +6,7 @@ exports[`TableBody > should match snapshot 1`] = `
     <tr>
       <td>
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
         >
           New book about Rust
         </p>
@@ -25,9 +25,11 @@ exports[`TableBody > should match snapshot 1`] = `
           22.82
         </p>
       </td>
-      <td>
+      <td
+        align="center"
+      >
         <button
-          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
           type="button"
         >
           Delete
@@ -37,7 +39,7 @@ exports[`TableBody > should match snapshot 1`] = `
     <tr>
       <td>
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
         >
           Snacks for a football match
         </p>
@@ -56,9 +58,11 @@ exports[`TableBody > should match snapshot 1`] = `
           4.56
         </p>
       </td>
-      <td>
+      <td
+        align="center"
+      >
         <button
-          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
           type="button"
         >
           Delete
@@ -68,7 +72,7 @@ exports[`TableBody > should match snapshot 1`] = `
     <tr>
       <td>
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
         >
           Bus ticket
         </p>
@@ -87,9 +91,11 @@ exports[`TableBody > should match snapshot 1`] = `
           0.58
         </p>
       </td>
-      <td>
+      <td
+        align="center"
+      >
         <button
-          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-18m3si8-JoyButton-root"
+          class="MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeSm css-1gh95q6-JoyButton-root"
           type="button"
         >
           Delete

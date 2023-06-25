@@ -4,7 +4,7 @@ exports[`TitleCell > should match snapshot 1`] = `
 <div>
   <td>
     <p
-      class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+      class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
     >
       New book about Rust
     </p>

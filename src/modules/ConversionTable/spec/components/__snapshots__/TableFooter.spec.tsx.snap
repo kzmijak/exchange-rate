@@ -4,16 +4,18 @@ exports[`TableFooter > should match snapshot 1`] = `
 <div>
   <tfoot>
     <tr>
-      <td>
-        <h6
-          class="MuiTypography-root MuiTypography-h6 css-m69daf-JoyTypography-root"
+      <td
+        colspan="4"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1wlnfom-JoyTypography-root"
         >
           Sum: 
           122.55
            PLN ( 
           27.97
            EUR )
-        </h6>
+        </p>
       </td>
     </tr>
   </tfoot>

@@ -8,7 +8,7 @@ exports[`TableHeader > should match snapshot 1`] = `
         class="MuiBox-root css-34k09d"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1cclw1u-JoyTypography-root"
         >
           Title
         </p>
@@ -17,7 +17,7 @@ exports[`TableHeader > should match snapshot 1`] = `
         class="MuiBox-root css-yikrym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
         >
           Amount (PLN)
         </p>
@@ -26,16 +26,16 @@ exports[`TableHeader > should match snapshot 1`] = `
         class="MuiBox-root css-yikrym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1dh3lps-JoyTypography-root"
         >
           Amount (EUR)
         </p>
       </th>
       <th
-        class="MuiBox-root css-bosr71"
+        class="MuiBox-root css-yikrym"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1 css-lmmucf-JoyTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-1fwdkz0-JoyTypography-root"
         >
           Options
         </p>
